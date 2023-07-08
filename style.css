@@ -9,12 +9,16 @@
    
 }
 
+p,h1,h2,h3,span{
+    line-height: 1.5;
+    font-weight: 700;
+}
+
 .purple{
     color:#6415ff;
 }
 h1,h2{
     font-size: 48px;
-    font-weight: 800;
     margin: 16px 0 16px 0;
 }
 
@@ -35,7 +39,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px;
+    padding: 24px 24px 24px 0;
 }
 
 .logo__img {
@@ -46,13 +50,13 @@ li {
 
 .row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
 .nav__container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -85,11 +89,11 @@ ul {
 
 .header__container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    padding: 32px 0 32px 0;
+    padding: 48px 0 32px 0;
 }
 .header__description--wrapper{
     width: 40%;
@@ -108,26 +112,52 @@ ul {
 }
 
 .header__para{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     margin-bottom: 28px;
-    line-height: 1.5;
+     width: 100%;
 }
 
 .header__input--wrapper{
-    width: 75%;
-    border: 2px solid #6415ff;
+    width: 85%;
     display: flex;
+    position: relative;
+    margin: 24px 0;
+    border-radius: 44px;
+    border: 2px solid rgba(0, 0, 0, 0.089);
+    transition: border 300ms ease;
 }
-
+.header__input--wrapper:hover{
+    border: 2px solid rgb(0, 0, 0);
+}
 .header__input{
-    margin: 0;
-    padding: 16px;
-    width: 100%;
+    width: 60%;
     outline: none;
-    border: none;
+    border:none;
+    border-radius: 44px;  
+    padding: 20px 32px;
+    font-size: 100%;
+    
 }
 
 .header__input--button{
-    padding: 8px 32px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   padding: 0 36px;
+   margin: 8px;
+   font-weight: 700;
+   font-size: 100%;
+   z-index: 2;
+}
+
+.header__companies--para{
+    font-size: 12px;
+    margin-top: 60px;
+}
+
+.company__logo--img{
+    width: 80%;
+    margin: 16px 0;
 }
