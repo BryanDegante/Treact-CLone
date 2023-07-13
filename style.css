@@ -28,7 +28,7 @@ a,li,button{
 }
 
 p {
-    color: #7c88a1;
+    color: #7c8ba1;
 }
 
 .purple {
@@ -208,7 +208,7 @@ ul {
     border-radius: 100px;
     border: 2px solid rgba(128, 128, 128, 0.3);
     overflow: hidden;
-    width: 90%;
+    max-width: 460px;
 }
 
 .header__input--wrapper:hover {
@@ -341,4 +341,51 @@ ul {
 
 .steps__description{
     padding-left: 64px;
+}
+
+/* VALUES SECTION */
+
+.values__principles--wrapper{
+    display: flex;
+    
+}
+.values__principle--wrapper{
+    margin-top: 32px;
+}
+
+.principle__title--wrapper{
+    display: flex;
+}
+
+.fa-dollar-sign {
+    color: rgb(39 103 73);
+}
+
+.fa-suitcase{
+    color: rgb(155 44 44);
+}
+.dollar__img{
+    background-color: rgb(154 230 180);
+
+}
+
+.suitcase__img{
+    background-color: rgb(254 178 178);
+}
+.principle__img{
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px
+}
+
+.principle__para{
+    max-width: 280px;
+    color: #718096;
+    font-weight: 400;
+    margin-top: 16px;
 }
