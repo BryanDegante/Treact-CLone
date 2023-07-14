@@ -17,13 +17,14 @@ h1,
 h2,
 h3,
 h4,
-h5
-span {
+h5 span {
     line-height: 1.5;
     font-weight: 700;
 }
 
-a,li,button{
+a,
+li,
+button {
     cursor: not-allowed;
 }
 
@@ -36,7 +37,8 @@ p {
 }
 
 h1,
-h2 {
+h2,
+h4 {
     color: #243E63;
     font-size: 48px;
 }
@@ -45,12 +47,12 @@ h3 {
     font-size: 24px;
 }
 
-h4{
+h4 {
     font-weight: 600;
     font-size: 20px;
 }
 
-h5{
+h5 {
     font-size: 16px;
 }
 
@@ -116,19 +118,21 @@ li {
     letter-spacing: 2px;
 }
 
-.section__wrapper{
-   display: flex;
-   align-items: center;
+.section__wrapper {
+    display: flex;
+    align-items: center;
 }
 
-.section__description--wrapper{
+.section__description--wrapper {
     width: 50%;
 }
-.section__description{
+
+.section__description {
     width: 100%;
-    padding: 32px ;
+    padding: 32px;
 }
-.section__img--wrapper{
+
+.section__img--wrapper {
     width: 50%;
 }
 
@@ -306,54 +310,57 @@ ul {
 
 /* QUALITY SECTION */
 
-.quality__img{
+.quality__img {
     border: 1px solid rgb(226, 232, 240)
 }
 
-.quality__button{
+.quality__button {
     margin-top: 32px;
     font-weight: 700;
 }
-.quality__para{
+
+.quality__para {
     font-size: 18px;
     max-width: 580px;
 }
 
 /* STEPS SECTION */
-.steps__number{
-    font-size: 36px ;
+.steps__number {
+    font-size: 36px;
     color: #cbd5e0;
     font-weight: 600;
     margin-right: 24px;
 }
-.steps__wrapper{
+
+.steps__wrapper {
     display: flex;
     margin-top: 32px
 }
 
-.step__para{
+.step__para {
     font-size: 14px;
     max-width: 320px;
     font-weight: 500;
     color: #718096;
-    margin-top:12px;
+    margin-top: 12px;
 }
 
-.steps__description{
+.steps__description {
     padding-left: 64px;
 }
 
 /* VALUES SECTION */
 
-.values__principles--wrapper{
+.values__principles--wrapper {
     display: flex;
-    
+
 }
-.values__principle--wrapper{
+
+.values__principle--wrapper {
     margin-top: 32px;
 }
 
-.principle__title--wrapper{
+.principle__title--wrapper {
     display: flex;
 }
 
@@ -361,18 +368,20 @@ ul {
     color: rgb(39 103 73);
 }
 
-.fa-suitcase{
+.fa-suitcase {
     color: rgb(155 44 44);
 }
-.dollar__img{
+
+.dollar__img {
     background-color: rgb(154 230 180);
 
 }
 
-.suitcase__img{
+.suitcase__img {
     background-color: rgb(254 178 178);
 }
-.principle__img{
+
+.principle__img {
     width: 36px;
     height: 36px;
     padding: 8px;
@@ -383,9 +392,95 @@ ul {
     margin-right: 12px
 }
 
-.principle__para{
+.principle__para {
     max-width: 280px;
     color: #718096;
     font-weight: 400;
     margin-top: 16px;
+}
+
+.values__button {
+    margin-top: 48px;
+    font-weight: 700;
+}
+
+/* PRICES SECTION */
+
+.prices__wrapper {
+    display: flex;
+    text-align: center;
+}
+
+.price__wrapper {
+    width: calc(100%/3);
+    border-radius: 8px;
+    border-top: none;
+    border: 2px solid rgb(226, 232, 240);
+    margin: 64px 32px 0 0;
+    
+    
+}
+
+.price__personal {
+    border-top: 8px solid rgb(56, 178, 172);
+    
+}
+
+.price__business {
+    background-color:rgb(100 21 255) ;
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.price__enterprise {
+    border-top: 8px solid rgb(245, 101, 101);
+}
+
+.price__amount--wrapper {
+    padding: 32px 0;
+    border-bottom: 2px solid rgb(226, 232, 240);
+}
+
+.price__description--wrapper {
+    padding: 32px;
+    color: #718096;
+}
+
+.price__button--wrapper {
+    border-top: 2px solid rgb(226, 232, 240);
+    padding: 32px 64px;
+}
+
+.amount__individual--description {
+    margin-top: 20px;
+}
+
+.business__heading--color{
+    color: #f7fafc
+}
+
+.business__description--color{
+    color: #e2e8f0;
+}
+
+.pricing__button{
+    padding: 16px 32px;
+    border-radius: 28px;
+    width: 100%;
+    max-width: 200px;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.personal__btn{
+    color: rgb(247 250 252 );
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%,rgb(129, 230, 217) 100%);
+}
+.business__btn{
+    background-color: rgb(247 250 252);
+    color: rgb(100 21 255);
+}
+.enterprise__btn{
+    color: rgb(247 250 252);
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
