@@ -19,6 +19,7 @@ h5 span {
     font-weight: 700;
 }
 
+
 a,
 li,
 button {
@@ -54,6 +55,7 @@ h5 {
 
 a {
     text-decoration: none;
+    padding-bottom: 4px;
 }
 
 li {
@@ -63,12 +65,13 @@ li {
 .logo__img--link {
     font-size: 24px;
     font-weight: 800;
-}
-
-.logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    transition: all 300ms ease;
+}
+
+.logo__img--link:hover{
+    color: #6415ff;
 }
 
 .logo__img {
@@ -154,6 +157,28 @@ li {
     font-weight: 600;
 }
 
+.hover__effect--purple{
+    border-bottom: 2px solid transparent;
+    transition: all 300ms ease;
+}
+
+
+.hover__effect--purple:hover{
+    border-bottom: 2px solid #6415ff;
+    color:#6415ff;
+}
+
+.hover__effect--white {
+    border-bottom: 2px solid transparent;
+    transition: all 300ms ease;
+}
+
+
+.hover__effect--white:hover {
+    border-bottom: 2px solid #f7fafc;
+    color: #f7fafc;
+}
+
 ul {
     display: flex;
     align-items: center;
@@ -166,10 +191,11 @@ ul {
     border: none;
     font-size: 14px;
     padding: 12px 32px;
+    transition: all 300ms ease;
 }
 
 .btn:hover {
-    background-color: #331079;
+    background-color: #4517a1;
 }
 
 .nav__button {
@@ -208,29 +234,33 @@ ul {
 
 .header__input--wrapper {
     position: relative;
-    border-radius: 100px;
-    border: 2px solid rgba(128, 128, 128, 0.3);
-    overflow: hidden;
     max-width: 460px;
 }
 
-.header__input--wrapper:hover {
-    border: 2px solid rgba(0, 0, 0, 0.377);
-}
+
 
 .header__input:placeholder-shown {
     font-weight: 500;
-    opacity: 0.25;
+    opacity: 0.5;
 }
 
 .header__input {
     font-size: 100%;
+    width: 100%;
     outline: none;
-    border: none;
-    padding: 20px 32px;
-
+    border-radius: 100px;
+    border: 2px solid rgba(128,128,128, 0.3);
+    padding: 20px 200px 20px 32px;
+    transition: all 300ms ease;
 }
 
+.header__input:hover{
+    border: 2px solid rgba(128,128,128);
+}
+.header__input:focus{
+    border: 2px solid #6415ff;
+    opacity: 1;
+}
 .header__input--button {
     position: absolute;
     top: 0;
@@ -429,6 +459,7 @@ ul {
 .prices__wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .price__wrapper {
@@ -479,7 +510,9 @@ ul {
 
 .price__button--wrapper {
     padding: 32px 64px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .amount__individual--description {
@@ -529,6 +562,14 @@ ul {
 
 }
 
+.button__effect{
+    transition: all 600ms ease;
+}
+
+.button__effect:hover{
+    transform: translateX(6px);
+    box-shadow: -4px 12px 24px rgba(0, 0, 0, 0.26);
+}
 /* TESTIMONIAL SECTION */
 
 #testimonials{
@@ -660,6 +701,11 @@ width: 100%;
      font-size: 16px;
      font-weight: 700;
      margin-right: 32px;
+     transition: all 300ms ease;
+}
+
+.get__started--button:hover{
+    background-color: rgb(250, 51, 51);
 }
 
 .contact__us--button{
@@ -670,6 +716,12 @@ width: 100%;
     font-size: 16px;
     font-weight: 700;
     border: 1px solid rgb(160 174 192);
+    transition: all 300ms ease;
+}
+
+.contact__us--button:hover{
+    background-color: #f7fafc;
+    color: #6415ff;
 }
 
 /* FOOTER */
@@ -681,7 +733,7 @@ footer{
 
 .links__wrapper{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -689,6 +741,7 @@ footer{
 .link__wrapper{
     display: flex;
     flex-direction: column;
+    width: calc(100%/5);
 }
 
 .footer__links--list{
@@ -744,6 +797,10 @@ footer{
     align-items: center;
 }
 
+.social__img--wrapper:hover{
+    opacity: 0.8;
+}
+
 .social__img--wrapper{
     border-radius: 50%;
     display: flex;
@@ -753,6 +810,7 @@ footer{
     justify-content: center;
     align-content: center;
     background-color: #f7fafc;
+    transition: opacity 300ms ease;
 }
 
 .social__img--wrapper:not(:last-child){
