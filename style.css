@@ -20,6 +20,10 @@ h5 span {
 }
 
 
+button{
+    font-size: 16px;
+}
+
 a,
 li,
 button {
@@ -408,6 +412,7 @@ ul {
 
 .principle__title--wrapper {
     display: flex;
+    align-items: center;
 }
 
 .fa-dollar-sign {
@@ -483,6 +488,7 @@ ul {
 .price__business {
     background-color: rgb(100 21 255);
     background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    border-top: 8px solid rgb(100 21 255);
 }
 
 .price__enterprise {
@@ -819,4 +825,75 @@ footer{
 
 .social__icon{
     padding: 8px;
+}
+
+
+/* MEDIA (PHONES, TABLETS, LAPTOPS) */
+
+@media (max-width: 768px )  {
+
+    h1,h2{
+        font-size: 36px;
+    }
+
+    p{
+        font-size: 16px !important;
+    }
+
+    button{
+        font-size: 14px !important;
+    }
+
+    .section__para, h4{
+        font-size: 16px;
+    }
+
+    .features__services--service{
+        width: calc(100%/2);
+    }
+
+    .price__button--wrapper{
+        padding: 32px 0 ;
+    }
+    
+    .started__description--para{
+        font-size: 24px !important;
+    }
+
+
+    .started__content{
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .started__buttons--wrapper{
+        justify-content: center;
+        margin-top: 8px;
+    }
+
+    .testimonial__person--mask{
+        height: 70px;
+        width: 70px;
+    }
+
+    .testimonial__person--wrapper{
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .testimonial__buttons--wrapper
+    {
+        margin-top: 16px;
+    }
+
+    .testimonial__button{
+        padding: 20px;
+        margin: 0 12px 0 0;
+    }
+
 }
