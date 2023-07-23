@@ -741,7 +741,6 @@ footer{
 .link__wrapper{
     display: flex;
     flex-direction: column;
-    width: calc(100%/5);
 }
 
 .footer__links--list{
